@@ -11,21 +11,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <link rel="stylesheet" href="style/css/normalize.css">
         <link rel="stylesheet" href="style/css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
     
         <section class="parallax-bg">
-            <div class="wrapper">
-                <div class="left"></div>
-                <div class="right"></div>
+            <header>
+                
+            </header>
+            <div class="wrapper grid">
+                <div class="left grid-4"></div>
+                <div class="right grid-8">
+                    
+                </div>
             </div>
         </section>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+              $(".parallax-bg").on('mousemove', function(e){
+ 
+                $(this).css({backgroundPosition: e.pageX + 'px ' + e.pageY + 'px' });
+
+                });      
+
+                $.easing.smoothmove = function (x, t, b, c, d) {
+                return -c *(t/=d)*(t-2) + b;
+                    }; 
+
+                $(".parallax-bg").on('mousemove', function(e){
+
+                $(this).animate({
+                  'background-position-x': e.pageX,
+                  'background-position-y': e.pageY
+                }, {queue:false,duration:200,easing:'smoothmove'});
+
+                });
+            });
+        </script>
     </body>
 </html>
