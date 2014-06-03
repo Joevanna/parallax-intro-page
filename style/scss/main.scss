@@ -1,0 +1,28 @@
+/*************************************************************
+Site Name: Organogram
+Author: Giovanna Ruiu
+
+Stylesheet: Main Stylesheet
+
+******************************************************************/
+// Bourbon
+@import "bourbon/bourbon";
+
+// Reset
+@import "utilities/normalize";
+
+// import variables
+@import "utilities/variables";
+
+// import screen snaps
+@import "utilities/screen";
+
+// import base 
+@import "base";
+
+/*********************
+CONTENT STYLES
+*********************/
+
+// import styling for home section
+@import "modules/home";
