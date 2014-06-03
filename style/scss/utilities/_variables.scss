@@ -1,0 +1,26 @@
+/*********************
+
+Stylesheet:
+	Variables stylesheet
+
+*********************/
+
+
+
+
+/*Screen width breakpoints*/
+$breakpoints: (
+	(phone-landscape 480px)
+	(phone-portrait 320px)
+	(tablet-portrait 640px)
+	(tablet-landscape 768px)
+	(desktop 	850px)
+	(medium		1056px)
+	(extended 	1262px)
+);
+
+/*Grid variables*/
+
+$grid-columns : 12; // Number of columns
+$grid-width : 1170px; // Total page width
+$grid-gutter : 15px; // Left / Right gutter on each column
