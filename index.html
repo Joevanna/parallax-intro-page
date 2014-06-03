@@ -23,33 +23,24 @@
             <div class="wrapper grid">
                 <div class="left grid-4"></div>
                 <div class="right grid-8">
+                    <div class="text-container">
+                        <h1>Some text</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
+                    </div>
                     
                 </div>
+
             </div>
         </section>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/main.js"></script>
         <script>
             $(document).ready(function(){
-              $(".parallax-bg").on('mousemove', function(e){
- 
-                $(this).css({backgroundPosition: e.pageX + 'px ' + e.pageY + 'px' });
-
-                });      
-
-                $.easing.smoothmove = function (x, t, b, c, d) {
-                return -c *(t/=d)*(t-2) + b;
-                    }; 
-
-                $(".parallax-bg").on('mousemove', function(e){
-
-                $(this).animate({
-                  'background-position-x': e.pageX,
-                  'background-position-y': e.pageY
-                }, {queue:false,duration:200,easing:'smoothmove'});
-
-                });
+                $('.parallax-bg').mousemove(function(e){
+                    var x = -(e.pageX + this.offsetLeft) / 20;                
+                    $(this).css('background-position', x + 'px ');
+                });    
             });
         </script>
     </body>

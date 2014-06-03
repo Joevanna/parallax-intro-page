@@ -11,8 +11,8 @@ Stylesheet:
 /*Screen width breakpoints*/
 $breakpoints: (
 	(phone-landscape 480px)
-	(phone-portrait 320px)
-	(tablet-portrait 640px)
+	(phone 320px)
+	(tablet 640px)
 	(tablet-landscape 768px)
 	(desktop 	850px)
 	(medium		1056px)
@@ -22,5 +22,5 @@ $breakpoints: (
 /*Grid variables*/
 
 $grid-columns : 12; // Number of columns
-$grid-width : 1262px; // Total page width
+$grid-width : 850px; // Total page width
 $grid-gutter : 15px; // Left / Right gutter on each column

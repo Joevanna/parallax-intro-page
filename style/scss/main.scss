@@ -13,7 +13,10 @@ Stylesheet: Main Stylesheet
 @import "utilities/variables";
 
 // import screen snaps
-@import "utilities/screen";
+@import "utilities/breakpoints";
+
+// import grid
+@import "utilities/grid";
 
 // import base 
 @import "utilities/base";
