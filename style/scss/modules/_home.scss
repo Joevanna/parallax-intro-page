@@ -3,10 +3,31 @@ body {
 }
 
 img.logo {
-	width: 130px;
+	width: 85px;
 	position: absolute;
-	right: 50px;
+	right: 0;
+	top: 0;
 	margin-top: 20px;
+}
+
+.nav {
+	
+	list-style: none;
+	margin-top: 35px;
+
+	li {
+		display: inline-block;
+		margin: 0 40px;
+		font-size: 20px;
+		font-weight: bold;
+		color: #2F3C4A;
+		text-transform: uppercase;
+
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
 }
 
 
@@ -18,9 +39,8 @@ img.logo {
   	-o-background-size: cover;
   	background-size: cover;
 	overflow: scroll;
-	position: absolute; width: 102%; height: 103%;
+	position: absolute; width: 104%; height: 103%;
 	header {
-		width: 100%;
 		height: 20%;
 	}
 
@@ -28,7 +48,8 @@ img.logo {
   		height: 70%;
 
   		.picture-box {
-  			background-image: url('http://placehold.it/480');
+  			background-image: url('http://placehold.it/300/588BC9/cccccc');
+  			background-size: contain;
   			display: inline-block;
 	  		height: 100%;
 	  		border-radius: 20px;
@@ -39,6 +60,7 @@ img.logo {
 	  		display: inline-block;
 	  		position: absolute;
 	  		bottom: 0;
+	  		right: 0;
 	  		// background-color: #4472b9;
 	  		// color: #fff;
 	  		border-radius: 20px;
@@ -76,6 +98,10 @@ img.logo {
 		background: linear-gradient(to bottom, #33ab3b 0%, #0d8515 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ab3b', endColorstr='#0d8515', GradientType=0);
 		border-radius: 20px;
+
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
 	}
 }
 
@@ -100,8 +126,38 @@ footer {
     background-image:-moz-linear-gradient(top, #31353a, #2f3337);
     background-image:linear-gradient(top, #31353a, #2f3337);
 
+    h1 {
+    	padding: 0;
+    	margin-top: 45px;
+    }
 
-    p {
-    	text-align: left;
+    .social-btns {
+    	padding: 0;
+    	text-align: right;
+    	position: absolute;
+    	right: 0;
+    	li {
+    		margin: 0 20px;
+    		display: inline-block;
+
+    		&:last-child {
+    			margin-right: 0;
+    		}
+    	}
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

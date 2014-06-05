@@ -694,13 +694,33 @@ body {
 
 /* line 5, ../scss/modules/_home.scss */
 img.logo {
-  width: 130px;
+  width: 85px;
   position: absolute;
-  right: 50px;
+  right: 0;
+  top: 0;
   margin-top: 20px;
 }
 
 /* line 13, ../scss/modules/_home.scss */
+.nav {
+  list-style: none;
+  margin-top: 35px;
+}
+/* line 18, ../scss/modules/_home.scss */
+.nav li {
+  display: inline-block;
+  margin: 0 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2F3C4A;
+  text-transform: uppercase;
+}
+/* line 27, ../scss/modules/_home.scss */
+.nav li:first-child {
+  margin-left: 0;
+}
+
+/* line 34, ../scss/modules/_home.scss */
 .parallax-bg {
   background-image: url("../../img/store-background-1920.jpg");
   -webkit-background-size: cover;
@@ -709,31 +729,32 @@ img.logo {
   background-size: cover;
   overflow: scroll;
   position: absolute;
-  width: 102%;
+  width: 104%;
   height: 103%;
 }
-/* line 22, ../scss/modules/_home.scss */
+/* line 43, ../scss/modules/_home.scss */
 .parallax-bg header {
-  width: 100%;
   height: 20%;
 }
-/* line 27, ../scss/modules/_home.scss */
+/* line 47, ../scss/modules/_home.scss */
 .parallax-bg .wrapper {
   height: 70%;
 }
-/* line 30, ../scss/modules/_home.scss */
+/* line 50, ../scss/modules/_home.scss */
 .parallax-bg .wrapper .picture-box {
-  background-image: url("http://placehold.it/480");
+  background-image: url("http://placehold.it/300/588BC9/cccccc");
+  background-size: contain;
   display: inline-block;
   height: 100%;
   border-radius: 20px;
   padding: 0;
 }
-/* line 38, ../scss/modules/_home.scss */
+/* line 59, ../scss/modules/_home.scss */
 .parallax-bg .wrapper .text-box {
   display: inline-block;
   position: absolute;
   bottom: 0;
+  right: 0;
   border-radius: 20px;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -753,7 +774,7 @@ img.logo {
   background: linear-gradient(to bottom, #5893ce 0%, #326da8 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5893ce', endColorstr='#326da8', GradientType=0);
 }
-/* line 65, ../scss/modules/_home.scss */
+/* line 87, ../scss/modules/_home.scss */
 .parallax-bg .mixed-box {
   height: 200px;
   margin-top: 70px;
@@ -768,16 +789,22 @@ img.logo {
   background: linear-gradient(to bottom, #33ab3b 0%, #0d8515 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33ab3b', endColorstr='#0d8515', GradientType=0);
   border-radius: 20px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
-/* line 83, ../scss/modules/_home.scss */
+/* line 109, ../scss/modules/_home.scss */
 .text-container {
   text-align: left;
   display: block;
   padding: 25px;
 }
 
-/* line 90, ../scss/modules/_home.scss */
+/* line 116, ../scss/modules/_home.scss */
 footer {
   height: 120px;
   color: #ccc;
@@ -790,7 +817,24 @@ footer {
   background-image: -moz-linear-gradient(top, #31353a, #2f3337);
   background-image: linear-gradient(top, #31353a, #2f3337);
 }
-/* line 104, ../scss/modules/_home.scss */
-footer p {
-  text-align: left;
+/* line 129, ../scss/modules/_home.scss */
+footer h1 {
+  padding: 0;
+  margin-top: 45px;
+}
+/* line 134, ../scss/modules/_home.scss */
+footer .social-btns {
+  padding: 0;
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+/* line 139, ../scss/modules/_home.scss */
+footer .social-btns li {
+  margin: 0 20px;
+  display: inline-block;
+}
+/* line 143, ../scss/modules/_home.scss */
+footer .social-btns li:last-child {
+  margin-right: 0;
 }
