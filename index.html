@@ -12,60 +12,117 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <link rel="stylesheet" href="style/css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
-    
-        <section class="parallax-bg">
-            <header class="grid">
-                <ul class="nav grid-8">
-                    <li>menu</li>
-                    <li>menu</li>
-                    <li>menu</li>
-                </ul>
-                <img class="logo grid-4" src="img/logo.svg" alt="logo">
-            </header>
-            <div class="wrapper grid">
-                <div class="picture-box grid-4"></div>
-                <div class="text-box offset-1 grid-7">
-                    <div class="text-container">
-                        <h1>Some text</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
+        <div class="container">
+        <header class="grid">
+            <ul class="nav grid-8">
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+            </ul>
+            <img class="logo grid-4" src="img/logo.svg" alt="logo">
+        </header>       
+        <section class="first scene" data-calibrate-x="false"
+            data-calibrate-y="true"
+            data-invert-x="false"
+            data-invert-y="true"
+            data-limit-x="false"
+            data-limit-y="10"
+            data-scalar-x="2"
+            data-scalar-y="8"
+            data-friction-x="0.2"
+            data-friction-y="0.8"
+            data-origin-x="0.0"
+            data-origin-y="1.0">
+            
+            <img src="img/brooklyn bridge.jpg" alt="img" class="layer" data-depth="0.60">
+            
+            <div class="overlay layer" data-depth="0.00">
+                <div class="grid">
+                    <div class="picture-box grid-4"></div>
+                    <div class="text-box offset-1 grid-7">
+                        <div class="text-container">
+                            <h1>Some text</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="wrapper grid">
-                <div class="mixed-box grid-12">  
-                    <h1>Some text</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
-                </div>
-            </div>
-            <footer>
-                <div class="grid">
-                    <h1 class="grid-4">Sharing buttons here?</h1>
-                    <ul class="social-btns grid-8">
-                        <li>
-                            <a href="#">
-                                <img src="img/facebook.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/twitter.png" alt="twitter">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/google.png" alt="google">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
                 
-            </footer>
+            </div>
         </section>
+        <section class="second scene"
+        data-calibrate-x="false"
+            data-calibrate-y="true"
+            data-invert-x="false"
+            data-invert-y="true"
+            data-limit-x="false"
+            data-limit-y="10"
+            data-scalar-x="2"
+            data-scalar-y="8"
+            data-friction-x="0.2"
+            data-friction-y="0.8"
+            data-origin-x="0.0"
+            data-origin-y="1.0">
+        
+            <img src="img/forest.jpg" alt="img" class="layer" data-depth="0.60">
+        
+            <div class="overlay layer" data-depth="0.00">
+                <div class="grid">
+                    <div class="text-box offset-1 grid-7">
+                        <div class="text-container">
+                            <h1>Some text</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
+                        </div>
+                    </div>
+                    <div class="picture-box grid-4"></div>
+                </div>
+            </div>
+        </section>
+        </div>
+         <footer>
+            <div class="grid">
+                <h1 class="grid-4">Sharing buttons here?</h1>
+                <ul class="social-btns grid-8">
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/google.png" alt="google">
+                        </a>
+                    </li>
+                </ul>
+            </div>       
+        </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/jQuery-v1.11.1.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.scene').parallax({
+                  calibrateX: false,
+                  calibrateY: true,
+                  invertX: false,
+                  invertY: true,
+                  limitX: false,
+                  limitY: 10,
+                  scalarX: 2,
+                  scalarY: 8,
+                  frictionX: 0.2,
+                  frictionY: 0.8,
+                  originX: 0.0,
+                  originY: 1.0
+                });
+            });
+        </script>
     </body>
 </html>
