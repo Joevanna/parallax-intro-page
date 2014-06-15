@@ -49,21 +49,18 @@ header {
 	}
 }
 
-section {
-	height: 100%;
-	width: 100%;
-	position: relative;
-
-
-}
 .scene {
+	height: 100vh;
+	width: 100%;
 	position: relative;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	img {
+	.bg {
 		width: 105%;
 		height: 105%;
+		background-size: cover;
+		background-size: 100% 100%;
 		margin-left: -15px;
 		margin-top: -15px;
 		top: 0;
@@ -71,6 +68,23 @@ section {
 		bottom: 0;
 		left: 0;
 		display: block;
+
+		// IE8 Cover polyfill
+
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+	}
+
+	.forest {
+		background-image: url("../../img/forest.jpg"); 
+	}
+
+	.bridge {
+		background-image: url("../../img/bridge.jpg");
+	}
+
+	.flowers {
+		background-image: url("../../img/flowers.jpg");
 	}
 	
 }
@@ -126,13 +140,13 @@ section {
   	}
 
   	.picture-box {
-		background-image: url('http://placehold.it/300/588BC9/cccccc');
-		background-size: contain;
+		background-image: url('../../img/traffic_lights_retina.jpg');
+		width: 300px;
 		display: inline-block;
-		height: 100%;
+		background-size: contain;
 		border-radius: 20px;
 		padding: 0;  
-		height: 200px;		
+		height: auto;		
 	}
 }
 
@@ -212,6 +226,32 @@ footer {
 	    		}
 	    	}
 	    }
+	}
+}
+
+// Media Querie for retina screen images
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+	.scene .bg {
+		.forest {
+			background-image: url("../../img/forest.jpg"); 
+		}
+
+		.bridge {
+			background-image: url("../../img/bridge.jpg");
+		}
+
+		.flowers {
+			background-image: url("../../img/flowers.jpg");
+		}
+	}
+
+	.overlay {
+		.picture-box {
+			background-image: url("../../img/retina/traffic_lights_retina.jpg");
+		}
 	}
 }
 
