@@ -2,6 +2,12 @@
 
 This application is formed by 4 sections in total, a slider, two sections with a static background image and a last one with an HTML5 video.
 
+All the styling was made using Sass. I have created a basic structure so that in future you can easily add files there if needed.
+
+In modules you can find the file with the actual styling of the page, while in the folder utilities there is styling for the grid, normalize, breakpoints and a file for variables. Everything is imported in "main.scss".
+
+In the js folder there is the main js file with the functionality to trigger the plugins, jQuery and the two plugins.
+
 A new section can be added just by copying the <section> and everything that is included inside the container div.
 
 The slider sits on top of the container, but the structure on each slide is exactly the same as the other sections.
@@ -29,8 +35,19 @@ The two <div> need also the "data-depth" attribute for the gyroscope to work. th
 
 To trigger the gyroscope, we just need to use it as a plugin $('.scene').parallax();
 
-We can pass different attibutes if we want to, here's the complete list: 
+We can pass different attibutes to calibrate th gyroscope on the x and y axis, here there is the complete list https://github.com/wagerfield/parallax.
 
+<!-- SUPERSLIDES.js -->
+
+The slider was built using superslides.js.
+
+the plugin needs a <div id="slides"></div> which act as a container, and all the slides are <li> contained in <ul class="slides-container">. Nothing more is needed. To add another slide, simply add another <li> with the content needed.
+
+The general styling of the stlider is contained in the file superslides.css.
+
+To trigger the slider: $('#slides').superslides();
+
+For more information on the plugin: https://github.com/nicinabox/superslides.
 
 
 

@@ -1,7 +1,18 @@
- $(document).ready(function(){
-    $('.parallax-bg').mousemove(function(e){
-       var x = -(e.pageX + this.offsetLeft) / 45;
-        var y = -(e.pageY + this.offsetTop) / 45;
-        $(this).css('background-position', x + 'px ' + y + 'px');
-    });    
+$(document).ready(function() {
+	$('.scene').parallax({
+	  calibrateX: false,
+	  calibrateY: true,
+	  invertX: false,
+	  invertY: true,
+	  limitX: false,
+	  limitY: false,
+	  scalarX: 2,
+	  scalarY: 5,
+	  frictionX: 0.2,
+	  frictionY: 0.8,
+	  originX: 1.0,
+	  originY: 0.0
+	}); 
+
+	$('#slides').superslides();
 });
