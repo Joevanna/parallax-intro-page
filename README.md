@@ -37,17 +37,6 @@ To trigger the gyroscope, we just need to use it as a plugin $('.scene').paralla
 
 We can pass different attibutes to calibrate th gyroscope on the x and y axis, here there is the complete list https://github.com/wagerfield/parallax.
 
-<!-- SUPERSLIDES.js -->
-
-The slider was built using superslides.js.
-
-the plugin needs a <div id="slides"></div> which act as a container, and all the slides are <li> contained in <ul class="slides-container">. Nothing more is needed. To add another slide, simply add another <li> with the content needed.
-
-The general styling of the stlider is contained in the file superslides.css.
-
-To trigger the slider: $('#slides').superslides();
-
-For more information on the plugin: https://github.com/nicinabox/superslides.
 
 
 

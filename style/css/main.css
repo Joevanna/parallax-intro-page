@@ -688,34 +688,43 @@ Usage:
 CONTENT STYLES
 *********************/
 /* line 1, ../scss/modules/_home.scss */
+html {
+  height: 100%;
+}
+
+/* line 5, ../scss/modules/_home.scss */
 body {
+  position: relative;
   font-family: "Avenir Next", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 28, ../scss/modules/_home.scss */
+.slides-container {
+  position: relative;
+  height: 100%;
+}
+/* line 33, ../scss/modules/_home.scss */
+.slides-container section {
+  position: absolute;
+  top: 0;
   min-height: 100%;
-  margin: 0;
-  padding: 0;
+  z-index: 1;
+}
+/* line 39, ../scss/modules/_home.scss */
+.slides-container section.active {
+  z-index: 2;
+  opacity: 1;
 }
 
-/* line 9, ../scss/modules/_home.scss */
-ul {
-  list-style: none;
-  display: inline;
-  overflow: hidden;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-/* line 16, ../scss/modules/_home.scss */
-ul li {
-  display: inline-block;
-  min-height: 100vh;
-}
-
-/* line 23, ../scss/modules/_home.scss */
+/* line 47, ../scss/modules/_home.scss */
 .container {
   position: relative;
 }
 
-/* line 28, ../scss/modules/_home.scss */
+/* line 52, ../scss/modules/_home.scss */
 .scene {
   height: 100vh;
   width: 100%;
@@ -724,7 +733,7 @@ ul li {
   padding: 0;
   overflow: hidden;
 }
-/* line 37, ../scss/modules/_home.scss */
+/* line 61, ../scss/modules/_home.scss */
 .scene .bg {
   width: 105%;
   height: 105%;
@@ -738,30 +747,24 @@ ul li {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
-/* line 54, ../scss/modules/_home.scss */
+/* line 78, ../scss/modules/_home.scss */
 .scene .forest {
   background-image: url("../../img/beach.jpg");
 }
-/* line 59, ../scss/modules/_home.scss */
+/* line 83, ../scss/modules/_home.scss */
 .scene .bridge {
   background-image: url("../../img/time.jpg");
 }
-/* line 63, ../scss/modules/_home.scss */
+/* line 87, ../scss/modules/_home.scss */
 .scene .flowers {
   background-image: url("../../img/flowers.jpg");
 }
-/* line 65, ../scss/modules/_home.scss */
+/* line 89, ../scss/modules/_home.scss */
 .scene .flowers video {
-  min-height: 100%;
-  max-width: 100%;
-  display: block;
-  -webkit-object-fit: fill;
-  -moz-object-fit: fill;
-  -ms-object-fit: fill;
-  object-fit: fill;
+  display: none;
 }
 
-/* line 82, ../scss/modules/_home.scss */
+/* line 98, ../scss/modules/_home.scss */
 .overlay {
   position: absolute;
   top: 10%;
@@ -770,10 +773,11 @@ ul li {
   height: 75%;
   z-index: 10;
   margin-top: 120px;
+  display: table !important;
 }
-/* line 92, ../scss/modules/_home.scss */
+/* line 109, ../scss/modules/_home.scss */
 .overlay .text-box {
-  display: inline-block;
+  display: table-cell !important;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -796,65 +800,80 @@ ul li {
   background: linear-gradient(to bottom, #010203 0%, #000000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#010203', endColorstr='#000000', GradientType=0);
 }
-/* line 115, ../scss/modules/_home.scss */
+/* line 132, ../scss/modules/_home.scss */
 .overlay .text-box .text-container {
   text-align: left;
   display: block;
-  padding: 25px;
+  padding: 20px;
 }
-/* line 120, ../scss/modules/_home.scss */
+/* line 137, ../scss/modules/_home.scss */
 .overlay .text-box .text-container h1 {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
-/* line 124, ../scss/modules/_home.scss */
+/* line 141, ../scss/modules/_home.scss */
 .overlay .text-box .text-container p {
-  font-size: 1em;
+  font-size: 0.8em;
 }
-/* line 134, ../scss/modules/_home.scss */
+/* line 151, ../scss/modules/_home.scss */
 .overlay .picture-box {
   background-image: url("../../img/traffic_lights.jpg");
   background-size: cover;
-  display: inline-block;
+  display: table-cell;
   border-radius: 20px;
   padding: 0;
-  height: 170px;
+  height: 150px;
 }
 
 @media all and (min-width: 850px) {
-  /* line 148, ../scss/modules/_home.scss */
+  /* line 167, ../scss/modules/_home.scss */
+  .scene .flowers video {
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    -webkit-object-fit: fill;
+    -moz-object-fit: fill;
+    -ms-object-fit: fill;
+    object-fit: fill;
+  }
+
+  /* line 180, ../scss/modules/_home.scss */
   section .overlay {
     height: 50%;
     margin-top: 120px;
   }
-  /* line 151, ../scss/modules/_home.scss */
+  /* line 183, ../scss/modules/_home.scss */
   section .overlay .picture-box {
     height: 300px;
     width: 300px;
   }
-  /* line 156, ../scss/modules/_home.scss */
-  section .overlay .text-container h1 {
+  /* line 188, ../scss/modules/_home.scss */
+  section .overlay .text-box .text-container {
+    padding: 25px;
+  }
+  /* line 190, ../scss/modules/_home.scss */
+  section .overlay .text-box .text-container h1 {
     font-size: 2em;
   }
-  /* line 160, ../scss/modules/_home.scss */
-  section .overlay .text-container p {
+  /* line 194, ../scss/modules/_home.scss */
+  section .overlay .text-box .text-container p {
     font-size: 0.8em;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 173, ../scss/modules/_home.scss */
+  /* line 208, ../scss/modules/_home.scss */
   .scene .bg .forest {
     background-image: url("../../img/forest.jpg");
   }
-  /* line 177, ../scss/modules/_home.scss */
+  /* line 212, ../scss/modules/_home.scss */
   .scene .bg .bridge {
     background-image: url("../../img/time.jpg");
   }
-  /* line 181, ../scss/modules/_home.scss */
+  /* line 216, ../scss/modules/_home.scss */
   .scene .bg .flowers {
     background-image: url("../../img/flowers.jpg");
   }
 
-  /* line 187, ../scss/modules/_home.scss */
+  /* line 222, ../scss/modules/_home.scss */
   .overlay .picture-box {
     background-image: url("../../img/retina/traffic_lights_retina.jpg");
   }

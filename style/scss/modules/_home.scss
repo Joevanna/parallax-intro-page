@@ -1,21 +1,45 @@
+html {
+	height: 100%;
+}
+
 body {
+	position: relative;
 	font-family: "Avenir Next", sans-serif;
-	min-height: 100%;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 
 }
 // General styling for the ul within the slider
-ul {
-	list-style: none;
-	display: inline;
-	overflow: hidden;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	li {
-		display: inline-block;
-		min-height: 100vh;
+// ul {
+// 	list-style: none;
+// 	display: inline;
+// 	overflow: hidden;
+// 	height: 100vh;
+// 	margin: 0;
+// 	padding: 0;
+// 	li {
+// 		display: inline-block;
+// 		min-height: 100vh;
+// 	}
+// }
+
+
+.slides-container {
+	position: relative;
+	height: 100%;
+
+
+	section {
+		position: absolute;
+		top: 0;
+		min-height: 100%;
+		z-index: 1;
+
+		&.active {
+			z-index: 2;
+			opacity: 1;
+		}
 	}
 }
 
@@ -61,18 +85,10 @@ ul {
 	}
 
 	.flowers {
-
+		background-image: url("../../img/flowers.jpg");		
 		video {
-			min-height: 100%;
-			max-width: 100%;
-			display: block;
-			// forces video to take all available height space
-			-webkit-object-fit: fill;
-			-moz-object-fit: fill;
-			-ms-object-fit: fill;
-			object-fit: fill;
-		}
-		background-image: url("../../img/flowers.jpg");
+			display: none;
+		}	
 	}
 	
 }
@@ -87,10 +103,11 @@ ul {
 	height: 75%;
 	z-index: 10;
 	margin-top: 120px;
+	display: table !important;
 
 	// Styling for text box in the overlay
 	.text-box {
-  		display: inline-block;
+		display: table-cell !important;
   		position: absolute;
   		bottom: 0;
   		right: 0;
@@ -115,14 +132,14 @@ ul {
 		.text-container {
 			text-align: left;
 			display: block;
-			padding: 25px;
+			padding: 20px;
 
 			h1 {
-				font-size: 1.7em;
+				font-size: 1.5em;
 			}
 
 			p {
-				font-size: 1em;
+				font-size: 0.8em;
 			}
 
 			
@@ -134,16 +151,31 @@ ul {
   	.picture-box {
 		background-image: url('../../img/traffic_lights.jpg');
 		background-size: cover;	
-		display: inline-block;
+		display: table-cell;
 		border-radius: 20px;
 		padding: 0;  
-		height: 170px;		
+		height: 150px;		
 	}
 }
 
 // Media Querie for Desktop
 
 @include breakpoint(desktop) {
+
+	.scene {
+		.flowers {
+			video {
+				display: block;
+				min-height: 100%;
+				min-width: 100%;
+				// forces video to take all available height space
+				-webkit-object-fit: fill;
+				-moz-object-fit: fill;
+				-ms-object-fit: fill;
+				object-fit: fill;
+			}
+		}
+	}
 
 	section .overlay {
 		height: 50%;
@@ -152,15 +184,18 @@ ul {
 			height: 300px;
 			width: 300px;
 		}
-		.text-container {
-			h1 {
-				font-size: 2em;
-			}
+		.text-box {
+			.text-container {
+				padding: 25px;
+				h1 {
+					font-size: 2em;
+				}
 
-			p {
-				font-size: 0.8em;
-			}		
-		}
+				p {
+					font-size: 0.8em;
+				}		
+			}
+		}	
 	}
 }
 
