@@ -90,7 +90,6 @@ body {
 		-webkit-background-size: cover;
 		-ms-background-size: cover;
 		background-size: cover;
-		background-size: 100% 100%;
 
 		// IE8 Background Cover polyfill
 
@@ -184,10 +183,11 @@ body {
 // Media Querie for Desktop
 
 @include breakpoint(desktop) {
-
-	#slider-nav {
-		div {
-			top: 50%;
+	.slides-container {
+		#slider-nav {
+			div {
+				top: 50%;
+			}
 		}
 	}
 

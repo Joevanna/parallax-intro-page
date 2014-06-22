@@ -779,28 +779,27 @@ body {
   -webkit-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
-  background-size: 100% 100%;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
 }
-/* line 101, ../scss/modules/_home.scss */
+/* line 100, ../scss/modules/_home.scss */
 .scene .forest {
   background-image: url("../../img/beach.jpg");
 }
-/* line 106, ../scss/modules/_home.scss */
+/* line 105, ../scss/modules/_home.scss */
 .scene .bridge {
   background-image: url("../../img/time.jpg");
 }
-/* line 110, ../scss/modules/_home.scss */
+/* line 109, ../scss/modules/_home.scss */
 .scene .flowers {
   background-image: url("../../img/flowers.jpg");
 }
-/* line 112, ../scss/modules/_home.scss */
+/* line 111, ../scss/modules/_home.scss */
 .scene .flowers video {
   display: none;
 }
 
-/* line 121, ../scss/modules/_home.scss */
+/* line 120, ../scss/modules/_home.scss */
 .overlay {
   position: absolute;
   top: 10%;
@@ -811,7 +810,7 @@ body {
   margin-top: 20px;
   display: table !important;
 }
-/* line 132, ../scss/modules/_home.scss */
+/* line 131, ../scss/modules/_home.scss */
 .overlay .text-box {
   display: table-cell !important;
   position: absolute;
@@ -836,21 +835,21 @@ body {
   background: linear-gradient(to bottom, #010203 0%, #000000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#010203', endColorstr='#000000', GradientType=0);
 }
-/* line 155, ../scss/modules/_home.scss */
+/* line 154, ../scss/modules/_home.scss */
 .overlay .text-box .text-container {
   text-align: left;
   display: block;
   padding: 20px;
 }
-/* line 160, ../scss/modules/_home.scss */
+/* line 159, ../scss/modules/_home.scss */
 .overlay .text-box .text-container h1 {
   font-size: 1.5em;
 }
-/* line 164, ../scss/modules/_home.scss */
+/* line 163, ../scss/modules/_home.scss */
 .overlay .text-box .text-container p {
   font-size: 0.8em;
 }
-/* line 174, ../scss/modules/_home.scss */
+/* line 173, ../scss/modules/_home.scss */
 .overlay .picture-box {
   background-image: url("../../img/traffic_lights.jpg");
   background-size: cover;
@@ -861,8 +860,8 @@ body {
 }
 
 @media all and (min-width: 850px) {
-  /* line 189, ../scss/modules/_home.scss */
-  #slider-nav div {
+  /* line 188, ../scss/modules/_home.scss */
+  .slides-container #slider-nav div {
     top: 50%;
   }
 
