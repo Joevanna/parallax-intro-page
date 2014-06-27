@@ -38,7 +38,11 @@ To trigger the gyroscope, we just need to use it as a plugin $('.scene').paralla
 We can pass different attibutes to calibrate th gyroscope on the x and y axis, here there is the complete list https://github.com/wagerfield/parallax.
 
 
+<!-- SLIDER -->
 
+The slider is contained inside a <div class="slides-container">, which has inside the slides and the <nav> with the arrows. Every slide is exactly built like the sections in the site, so to add one, simply add an entire section in the container. The nav with the arrows is at the bottom of the container, and allows to change the slides manually by clicking the arrows. 
+
+To make the slides change automatically, simply comment the nav and a function that fades out the slides will be triggered. The slides will be faded out every 1.5 seconds, to change this, change the integer in the setInterval function, line 66.
 
 
 

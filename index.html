@@ -57,10 +57,13 @@
                     </div>
                 </div>
             </section>
-            <nav id="slider-nav">
+
+            <!-- ARROWS FOR THE SLIDER - JUST UNCOMMENT THE CODE TO ADD THEM TO THE SLIDER AND CHANGE THE SLIDES MANUALLY -->
+
+           <!--  <nav id="slider-nav">
                 <div class="prev">&lang;</div>
                 <div class="next">&rang;</div>
-            </nav>
+            </nav> -->
         </div>
         <!-- Site sections outside the slider    -->
         <div class="container">       
@@ -104,9 +107,10 @@
                 <!-- HTML5 video, you can put one in every div to replace the static background -->
                     <video loop autoplay>
                         <source src="video/Big_Buck_Bunny_Trailer.mp4" type="video/mp4"/>
-                        <source src="video/Big_Buck_Bunny_Trailer.ogv" type="video/ogg"/>
-                        <source src="video/Big_Buck_Bunny_Trailer.webm" type="video/webm"/>
-                        <link rel="stylesheet" href="http:youtube.com">
+                        <source src="video/Big_Buck_Bunny_Trailer.ogv" type="video/ogg; codecs='theora, vorbis'"/>
+                        <source src="video/Big_Buck_Bunny_Trailer.webm" type="video/webm; codecs='vp8, vorbis'"/>
+                        <!-- FALLBACK IN CASE VIDEO DOES NOT WORK. CAN BE REPLACED WITH A P OR A FLASH VIDEO -->
+                        <link rel="stylesheet" href="http://youtube.com">
                     </video>
                 </div>  
                 <div class="overlay layer" data-depth="0.00">
@@ -126,7 +130,6 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/jQuery-v1.11.1.js"></script>
         <script src="js/jquery.parallax.js"></script>
-        <script src="js/jquery.superslides.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
