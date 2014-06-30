@@ -839,17 +839,18 @@ body {
 .overlay .text-box .text-container {
   text-align: left;
   display: block;
-  padding: 20px;
+  padding: 10px 20px;
 }
 /* line 159, ../scss/modules/_home.scss */
 .overlay .text-box .text-container h1 {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  margin: 0.33em 0px;
 }
-/* line 163, ../scss/modules/_home.scss */
+/* line 164, ../scss/modules/_home.scss */
 .overlay .text-box .text-container p {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
-/* line 173, ../scss/modules/_home.scss */
+/* line 174, ../scss/modules/_home.scss */
 .overlay .picture-box {
   background-image: url("../../img/traffic_lights.jpg");
   background-size: cover;
@@ -860,12 +861,12 @@ body {
 }
 
 @media all and (min-width: 850px) {
-  /* line 188, ../scss/modules/_home.scss */
+  /* line 189, ../scss/modules/_home.scss */
   .slides-container #slider-nav div {
     top: 50%;
   }
 
-  /* line 196, ../scss/modules/_home.scss */
+  /* line 197, ../scss/modules/_home.scss */
   .scene .flowers video {
     display: block;
     min-height: 100%;
@@ -876,44 +877,44 @@ body {
     object-fit: fill;
   }
 
-  /* line 209, ../scss/modules/_home.scss */
+  /* line 210, ../scss/modules/_home.scss */
   section .overlay {
     height: 50%;
     margin-top: 120px;
   }
-  /* line 212, ../scss/modules/_home.scss */
+  /* line 213, ../scss/modules/_home.scss */
   section .overlay .picture-box {
     height: 300px;
     width: 300px;
   }
-  /* line 217, ../scss/modules/_home.scss */
+  /* line 218, ../scss/modules/_home.scss */
   section .overlay .text-box .text-container {
     padding: 25px;
   }
-  /* line 219, ../scss/modules/_home.scss */
+  /* line 220, ../scss/modules/_home.scss */
   section .overlay .text-box .text-container h1 {
     font-size: 2em;
   }
-  /* line 223, ../scss/modules/_home.scss */
+  /* line 224, ../scss/modules/_home.scss */
   section .overlay .text-box .text-container p {
     font-size: 0.8em;
   }
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 237, ../scss/modules/_home.scss */
+  /* line 238, ../scss/modules/_home.scss */
   .scene .bg .forest {
     background-image: url("../../img/forest.jpg");
   }
-  /* line 241, ../scss/modules/_home.scss */
+  /* line 242, ../scss/modules/_home.scss */
   .scene .bg .bridge {
     background-image: url("../../img/time.jpg");
   }
-  /* line 245, ../scss/modules/_home.scss */
+  /* line 246, ../scss/modules/_home.scss */
   .scene .bg .flowers {
     background-image: url("../../img/flowers.jpg");
   }
 
-  /* line 251, ../scss/modules/_home.scss */
+  /* line 252, ../scss/modules/_home.scss */
   .overlay .picture-box {
     background-image: url("../../img/retina/traffic_lights_retina.jpg");
   }

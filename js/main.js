@@ -63,7 +63,7 @@ $(document).ready(function() {
 				$slides.eq(nextSlideIndex).addClass('active');
 				$activeSlide = $slides.eq(nextSlideIndex);
 				// CHANGE TIMING FOR EACH SLIDE HERE
-			}, 1500);
+			}, 3000);
 		}
 
 		
