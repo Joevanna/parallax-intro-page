@@ -9,127 +9,154 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- REVOLUTION BANNER CSS SETTINGS -->
+        <link rel="stylesheet" type="text/css" href="css/utilities/settings.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="css/utilities/settings-ie8.css" media="screen" />
         <link rel="stylesheet" href="style/css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jQuery-v1.11.1.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+         <!-- jQuery REVOLUTION Slider  -->
+        <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
+
     </head>
     <body>
-        <!-- Slider container -->
-        <div class="slides-container" id="slides-container">
-            <section class="scene first active" data-calibrate-x="false">
-                <!-- Div to allow background image. Video can go in here -->
-                <div class="bg layer forest" data-depth="0.60"></div>     
-                <div class="overlay layer" data-depth="0.00">
-                    <div class="grid">
-                        <div class="picture-box grid-4"></div>
-                        <div class="text-box offset-1 grid-6 offset-1">
-                            <div class="text-container">
-                                <h1>Some text</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
-                            </div>
-                        </div>
-                    </div>      
-                </div>
-            </section>
-             <section class="scene second">
-                <div class="bg layer bridge" data-depth="0.60"></div>
-                <div class="overlay layer" data-depth="0.00">
-                    <div class="grid">
-                        <div class="text-box offset-1 grid-6 offset-1">
-                            <div class="text-container">
-                                <h1>Some text</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
-                            </div>
-                        </div>
-                        <div class="picture-box grid-4"></div>
-                    </div>
-                </div>
-            </section>
-             <section class="scene third">
-                <div class="bg layer flowers" data-depth="0.60"></div>
-                <div class="overlay layer" data-depth="0.00">
-                    <div class="grid">
-                        <div class="text-box offset-1 grid-6 offset-1">
-                            <div class="text-container">
-                                <h1>Some text</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
-                            </div>
-                        </div>
-                        <div class="picture-box grid-4"></div>
-                    </div>
-                </div>
-            </section>
+    <nav class="header">
+        <img src="img/logo-black.png" alt="" class="logo">
+        <ul class="navigation">
+            <li><a href="#">what we do</a></li>
+            <li><a href="#">our work</a></li>
+            <li><a href="#">why us?</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </nav>
+    <div class="bannercontainer">
+        <div class="banner">
+            <ul>
+                <!-- THE BOXSLIDE EFFECT EXAMPLES  WITH LINK ON THE MAIN SLIDE EXAMPLE -->
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="400" data-delay="5000">
+                    <img src="img/background-street.jpg" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgposition="center center" alt="background"  
+                    alt="kenburns1"
+                    data-kenburns="on"
+                    data-bgposition="left bottom"
+                    data-bgpositionend="center top"
+                    data-bgfit="200"
+                    data-bgfitend="100"
+                     data-duration="2000"
+                     data-ease="Power4.easeInOut">
 
-            <!-- ARROWS FOR THE SLIDER - JUST UNCOMMENT THE CODE TO ADD THEM TO THE SLIDER AND CHANGE THE SLIDES MANUALLY -->
+                    
+                    <div class="content">
+                        <h2>e-commerce</h2>
+                        <h2>web design &amp; development</h2>
+                        <h2>search engine optimisation</h2>
+                        <h2>digital strategy</h2>
+                        <p>From our small office in the Lace Market, Nottingham, we make beautiful, easy to use websites that you can manage <span>anywhere</span>.</p>
+                        <div class="buttons">
+                            <a href="#">why us?</a>
+                            <a href="#">contact us</a>
+                        </div>
+                        
+                    </div>
+                     <img src="img/laptop-in-cafe.png" data-bgfit="contain" data-bgposition="center center" alt="laptop in cafe" class="laptop">
 
-           <!--  <nav id="slider-nav">
-                <div class="prev">&lang;</div>
-                <div class="next">&rang;</div>
-            </nav> -->
+                </li>
+               <!--  <li data-transition="fade" data-slotamount="1" data-masterspeed="400" data-delay="5000">
+                    <img src="img/background-street.jpg" data-bgrepeat="no-repeat" data-bgfit="cover" data-bgposition="center center" alt="background">
+                    <div class="caption sft big_white"  data-x="400" data-y="100" data-speed="700" data-start="1700" data-easing="easeOutBack">KICKSTART YOUR WEBSITE</div>
+                   <div class="caption sfb big_orange"  data-x="400" data-y="142" data-speed="500" data-start="1900" data-easing="easeOutBack">WITH SLIDER REVOLUTION!</div>
+                   <div class="caption lfr medium_grey"  data-x="510" data-y="210" data-speed="300" data-start="2000">UNLIMITED TRANSITIONS</div>
+                </li> -->
+            </ul>
         </div>
-        <!-- Site sections outside the slider    -->
-        <div class="container">       
-            <section class="scene" data-calibrate-x="false">
-                <!-- Div to allow background image. Video can go in here -->
-                <div class="bg layer forest" data-depth="0.60"></div>     
-                <div class="overlay layer" data-depth="0.00">
-                    <div class="grid">
-                        <div class="picture-box grid-4"></div>
-                        <div class="text-box offset-1 grid-6 offset-1">
-                            <div class="text-container">
-                                <h1>Some text</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
-                            </div>
-                        </div>
-                    </div>      
-                </div>
-            </section>
-            <section class="scene">
-                <div class="bg layer bridge" data-depth="0.60"></div>
-                <div class="overlay layer" data-depth="0.00">
-                    <div class="grid">
-                        <div class="text-box offset-1 grid-6 offset-1">
-                            <div class="text-container">
-                                <h1>Some text</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
-                            </div>
-                        </div>
-                        <div class="picture-box grid-4"></div>
-                    </div>
-                </div>
-            </section>
-            <section class="scene">
-                <div class="bg layer flowers" data-depth="0.60">
-                <!--[if lt IE 9]>
-                    <script>
-                        document.createElement('video');
-                    </script>
-                <![endif]-->
-
-                <!-- HTML5 video, you can put one in every div to replace the static background -->
-                    <video loop autoplay>
-                        <source src="video/Big_Buck_Bunny_Trailer.m4v" type="video/mp4"/>
-                        <source src="video/Big_Buck_Bunny_Trailer.ogv" type="video/ogg"/>
-                        <source src="video/Big_Buck_Bunny_Trailer.webm" type="video/webm"/>
-                        <!-- FALLBACK IN CASE VIDEO DOES NOT WORK. CAN BE REPLACED WITH A P OR A FLASH VIDEO -->
-                        <link rel="stylesheet" href="http://youtube.com">
-                    </video>
-                </div>  
-                <div class="overlay layer" data-depth="0.00">
-                    <div class="grid">
-                        <div class="text-box offset-1 grid-6 offset-1">
-                            <div class="text-container">
-                                <h1>Some text</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, aliquam, nam, vitae, impedit illum laudantium libero amet dolor ea magnam est quis sit. Consequuntur alias odit blanditiis nostrum rem repellat.</p>
-                            </div>
-                        </div>
-                        <div class="picture-box grid-4"></div>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="js/jQuery-v1.11.1.js"></script>
-        <script src="js/jquery.parallax.js"></script>
-        <script src="js/main.js"></script>
+    </div>
+        <script type="text/javascript">
+ 
+           $(document).ready(function() {
+              $('.banner').revolution({
+                 delay:9000,
+                 startwidth:960,
+                 startheight:500,
+                 startWithSlide:0,
+         
+                 fullScreenAlignForce:"off",
+                 autoHeight:"off",
+         
+                 shuffle:"off",
+         
+                 onHoverStop:"on",
+         
+                 thumbWidth:100,
+                 thumbHeight:50,
+                 thumbAmount:3,
+         
+                 hideThumbsOnMobile:"off",
+                 hideNavDelayOnMobile:1500,
+                 hideBulletsOnMobile:"off",
+                 hideArrowsOnMobile:"off",
+                 hideThumbsUnderResoluition:0,
+         
+                 hideThumbs:0,
+                 hideTimerBar:"off",
+         
+                 keyboardNavigation:"on",
+         
+                 navigationType:"bullet",
+                 navigationArrows:"solo",
+                 navigationStyle:"round",
+         
+                 navigationHAlign:"center",
+                 navigationVAlign:"bottom",
+                 navigationHOffset:30,
+                 navigationVOffset:30,
+         
+                 soloArrowLeftHalign:"left",
+                 soloArrowLeftValign:"center",
+                 soloArrowLeftHOffset:20,
+                 soloArrowLeftVOffset:0,
+         
+                 soloArrowRightHalign:"right",
+                 soloArrowRightValign:"center",
+                 soloArrowRightHOffset:20,
+                 soloArrowRightVOffset:0,
+         
+         
+                 touchenabled:"on",
+                 swipe_velocity:"0.7",
+                 swipe_max_touches:"1",
+                 swipe_min_touches:"1",
+                 drag_block_vertical:"false",
+         
+                 parallax:"mouse",
+                 parallaxBgFreeze:"on",
+                 parallaxLevels:[10,7,4,3,2,5,4,3,2,1],
+                 parallaxDisableOnMobile:"off",
+         
+                 stopAtSlide:-1,
+                 stopAfterLoops:-1,
+                 hideCaptionAtLimit:0,
+                 hideAllCaptionAtLilmit:0,
+                 hideSliderAtLimit:0,
+         
+                 dottedOverlay:"none",
+         
+                 spinned:"spinner4",
+         
+                 fullWidth:"off",
+                 forceFullWidth:"off"
+                 fullScreen:"off",
+                 fullScreenOffsetContainer:"#topheader-to-offset",
+                 fullScreenOffset:"0px",
+         
+         
+                 shadow:0
+         
+              });
+         
+           });
+     
+    </script>
     </body>
 </html>
