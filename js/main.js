@@ -1,18 +1,4 @@
-$(document).ready(function() {
 
-
- $('.fullscreenbanner').revolution(
-
-	{
-		delay:15000,
-		startwidth:1170,
-		startheight:500,
-		hideThumbs:10,
-		fullWidth:"off",
-		fullScreen:"on",
-		fullScreenOffsetContainer: ""
-
-	});
 
 	// var $slides = $('#slides-container').find('section'),
 	// 	slideCount = $slides.length,
