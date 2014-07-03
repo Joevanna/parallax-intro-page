@@ -760,41 +760,43 @@ nav.header .navigation li a {
 .bannercontainer .banner img.laptop {
   position: absolute;
   bottom: 0;
-  width: 100%;
-  z-index: 1;
+  width: 100% !important;
+  z-index: 2;
 }
 /* line 71, ../scss/modules/_home.scss */
 .bannercontainer .banner .content {
   position: absolute;
   width: 100%;
   bottom: 0;
-  top: 120px;
+  top: 110px;
+  z-index: 4;
 }
-/* line 77, ../scss/modules/_home.scss */
+/* line 78, ../scss/modules/_home.scss */
 .bannercontainer .banner .content .text {
   position: relative;
   float: right;
-  margin-right: 30px;
+  margin-right: 40px;
   z-index: 4;
 }
-/* line 82, ../scss/modules/_home.scss */
+/* line 83, ../scss/modules/_home.scss */
 .bannercontainer .banner .content .text h2 {
   text-transform: uppercase;
   color: #595959;
   font-weight: lighter;
 }
-/* line 88, ../scss/modules/_home.scss */
+/* line 89, ../scss/modules/_home.scss */
 .bannercontainer .banner .content .text p {
   width: 400px;
   color: #595959;
+  display: block;
   font-weight: lighter;
   margin-bottom: 50px;
 }
-/* line 93, ../scss/modules/_home.scss */
+/* line 95, ../scss/modules/_home.scss */
 .bannercontainer .banner .content .text p span {
   font-style: italic;
 }
-/* line 105, ../scss/modules/_home.scss */
+/* line 106, ../scss/modules/_home.scss */
 .bannercontainer .banner .content .buttons a {
   border: 1px solid #000;
   text-decoration: none;
@@ -807,7 +809,7 @@ nav.header .navigation li a {
   -ms-transition: background-color .3s linear, color .3s linear;
   transition: background-color .3s linear, color .3s linear;
 }
-/* line 117, ../scss/modules/_home.scss */
+/* line 118, ../scss/modules/_home.scss */
 .bannercontainer .banner .content .buttons a:hover {
   background-color: transparent;
   color: #000;

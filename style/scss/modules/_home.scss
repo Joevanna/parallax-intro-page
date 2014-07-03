@@ -42,7 +42,7 @@ nav.header {
 	width:100%;
 	position:relative;
 	padding:0;
-
+	
 	.banner{
 		width:100%;
 		position:relative;
@@ -64,20 +64,21 @@ nav.header {
 		img.laptop {
 			position: absolute;
 			bottom: 0;
-			width: 100%;
-			z-index: 1;
+			width: 100% !important;
+			z-index: 2;
 		}
 
 		.content {
 			position: absolute;
 			width: 100%;
 			bottom: 0;
-			top: 120px;
+			top: 110px;
+			z-index: 4;
 			
 			.text {
 				position: relative;
 				float: right;
-				margin-right: 30px;
+				margin-right: 40px;
 				z-index: 4;
 				h2 {
 					text-transform: uppercase;
@@ -88,6 +89,7 @@ nav.header {
 				p {
 					width: 400px;
 					color: #595959;
+					display: block;
 					font-weight: lighter;
 					margin-bottom: 50px;
 					span {
@@ -100,7 +102,6 @@ nav.header {
 			
 
 			.buttons {
-
 
 				a {
 					border: 1px solid #000;
@@ -123,311 +124,3 @@ nav.header {
 		}
 	}
 }
-
-
-
-
-
- 
-
-
-
-// html {
-// 	height: 100%;
-// }
-
-// body {
-// 	position: relative;
-// 	font-family: "Avenir Next", sans-serif;
-// 	height: 100%;
-// 	margin: 0;
-// 	padding: 0;
-
-// }
-
-// .slides-container {
-// 	position: relative;
-// 	height: 100%;
-
-// 	section {
-// 		position: absolute;
-// 		top: 0;
-// 		min-height: 100%;
-// 		opacity: 0;
-// 		-webkit-transition: all .3s linear;
-// 		-moz-transition: all .3s linear;
-// 		-ms-transition: all .3s linear;
-// 		transition: all .3s linear;
-
-// 		&.active {
-// 			opacity: 1;
-// 		}
-
-
-// 	}
-
-// 	#slider-nav {
-// 		position: relative;
-// 		height: 100%;
-// 		padding: 0 10px;
-
-// 		div {
-// 			position: absolute;
-// 			top: 36%;
-// 			font-size: 45px;
-// 			padding: 10px 25px;
-// 			-webkit-border-radius: 50%;
-// 			-moz-border-radius: 50%;
-// 			-ms-border-radius: 50%;
-// 			border-radius: 50%;
-// 			color: #000;
-// 			background-color: rgba(0,0,0, 0);
-// 			-webkit-transition: all .3s linear;
-// 			-moz-transition: all .3s linear;
-// 			-ms-transition: all .3s linear;
-// 			transition: all .3s linear;
-
-// 			&.next {
-// 				right: 1%;
-// 			}
-
-// 			&.prev {
-// 				left: 1%;
-// 			}
-
-// 			&:hover {
-// 				background-color: rgba(0,0,0, .4);
-// 				color: #fff;
-// 			}
-// 		}
-// 	}
-// }
-
-// // Container styling
-// .container {
-// 	position: relative;
-// }
-
-// // Styling for every section
-// .scene {
-// 	height: 100vh;
-// 	width: 100%;
-// 	position: relative;
-// 	margin: 0;
-// 	padding: 0;
-// 	overflow: hidden;
-
-// 	// Styling for the div containing the backgroud image
-// 	.bg {
-// 		width: 105%;
-// 		height: 105%;
-// 		display: block;
-// 		max-width: 105%;
-// 		max-height: 105%;
-// 		-webkit-background-size: cover;
-// 		-ms-background-size: cover;
-// 		background-size: cover;
-
-// 		// IE8 Background Cover polyfill
-
-// 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-// 		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-// 	}
-
-// 	.forest {
-// 		background-image: url("../../img/beach.jpg"); 
-		
-// 	}
-
-// 	.bridge {
-// 		background-image: url("../../img/time.jpg");
-// 	}
-
-// 	.flowers {
-// 		background-image: url("../../img/flowers.jpg");		
-// 		video {
-// 			display: none;
-// 		}	
-// 	}
-	
-// }
-
-// // Overlay styling
-
-// .overlay {
-// 	position: absolute;
-// 	top: 10%;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 400px;
-// 	z-index: 10;
-// 	margin-top: 25px;
-// 	display: table !important;
-
-// 	// Styling for text box in the overlay
-// 	.text-box {
-// 		display: inline-block;
-
-//   		-webkit-border-radius: 20px;
-//   		-moz-border-radius: 20px;
-//   		-ms-border-radius: 20px;
-//   		border-radius: 20px;
-// 		padding: 0;
-
-// 		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-// 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-// 		box-sizing: border-box;         /* Opera/IE 8+ */
-
-// 		color: #a7a8a9;
-// 		border: 1px solid #000000;
-// 		background: #010203;
-// 		background: -moz-linear-gradient(top, #010203 0%, #000000 100%);
-// 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #010203), color-stop(100%, #000000));
-// 		background: -webkit-linear-gradient(top, #010203 0%, #000000 100%);
-// 		background: -o-linear-gradient(top, #010203 0%, #000000 100%);
-// 		background: -ms-linear-gradient(top, #010203 0%, #000000 100%);
-// 		background: linear-gradient(to bottom, #010203 0%, #000000 100%);
-// 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#010203', endColorstr='#000000', GradientType=0);
-		
-// 		.text-container {
-// 			text-align: left;
-// 			display: block;
-// 			padding: 10px 20px;
-
-// 			h1 {
-// 				font-size: 1.2em;
-// 				margin: 0.33em 0;
-// 			}
-
-// 			p {
-// 				font-size: 0.7em;
-// 			}
-
-			
-// 		}
-//   	}
-
-//   	// Styling for image box
-
-//   	.picture-box {
-// 		background-image: url('../../img/traffic_lights.jpg');
-// 		background-size: cover;	
-// 		display: inline-block;
-// 		-webkit-border-radius: 20px;
-//   		-moz-border-radius: 20px;
-//   		-ms-border-radius: 20px;
-//   		border-radius: 20px;
-// 		padding: 0;  
-// 		height: 150px;		
-// 	}
-// }
-
-// @media only screen 
-// and (max-device-width : 568px) 
-// and (orientation : portrait) { 
-// 	.overlay {
-// 		width: 80%;
-// 		margin-left: 10%;
-// 	}
-// }
-
-// // Media Query for Desktop
-
-// @include breakpoint(desktop) {
-// 	.slides-container {
-// 		#slider-nav {
-// 			div {
-// 				top: 50%;
-// 			}
-// 		}
-// 	}
-
-// 	.scene {
-// 		.flowers {
-// 			video {
-// 				display: block;
-// 				min-height: 100%;
-// 				min-width: 100%;
-// 				// forces video to take all available height space
-// 				-webkit-object-fit: fill;
-// 				-moz-object-fit: fill;
-// 				-ms-object-fit: fill;
-// 				object-fit: fill;
-// 			}
-// 		}
-// 	}
-
-// 	section .overlay {
-// 		height: 50%;
-// 		margin-top: 120px;
-// 		.picture-box {
-// 			height: 300px;
-// 			width: 300px;
-// 		}
-// 		.text-box {
-// 			.text-container {
-// 				padding: 25px;
-// 				h1 {
-// 					font-size: 2em;
-// 				}
-
-// 				p {
-// 					font-size: 0.8em;
-// 				}		
-// 			}
-// 		}	
-// 	}
-// }
-
-// // Media Query for mini ipad
-
-// @media only screen 
-// and (min-device-width : 768px) 
-// and (max-device-width : 1024px) 
-// and (orientation : landscape)
-// and (-webkit-min-device-pixel-ratio: 1)  {
-
-// 	.overlay {
-// 		width: 75%;
-// 		margin: 0 auto;
-// 	}
-// }
-
-// // Media Query for retina screen images
-
-// @media 
-// (-webkit-min-device-pixel-ratio: 2), 
-// (min-resolution: 192dpi) { 
-// 	.scene .bg {
-// 		.forest {
-// 			background-image: url("../../img/forest.jpg"); 
-// 		}
-
-// 		.bridge {
-// 			background-image: url("../../img/time.jpg");
-// 		}
-
-// 		.flowers {
-// 			background-image: url("../../img/flowers.jpg");
-// 		}
-// 	}
-
-// 	.overlay {
-// 		.picture-box {
-// 			background-image: url("../../img/retina/traffic_lights_retina.jpg");
-// 		}
-// 	}
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
