@@ -697,8 +697,8 @@ body {
 nav.header {
   width: 100%;
   height: 100px;
-  top: 0;
-  z-index: 6;
+  position: fixed;
+  z-index: 21;
   padding: 0 20px;
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, other WebKit */
@@ -707,22 +707,22 @@ nav.header {
   box-sizing: border-box;
   /* Opera/IE 8+ */
 }
-/* line 18, ../scss/modules/_home.scss */
+/* line 17, ../scss/modules/_home.scss */
 nav.header img {
   width: 300px;
   margin-top: 20px;
 }
-/* line 23, ../scss/modules/_home.scss */
+/* line 22, ../scss/modules/_home.scss */
 nav.header .navigation {
   float: right;
   margin-top: 30px;
 }
-/* line 26, ../scss/modules/_home.scss */
+/* line 25, ../scss/modules/_home.scss */
 nav.header .navigation li {
   display: inline-block;
   margin: 0 15px;
 }
-/* line 30, ../scss/modules/_home.scss */
+/* line 29, ../scss/modules/_home.scss */
 nav.header .navigation li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -730,37 +730,38 @@ nav.header .navigation li a {
   color: #595959;
 }
 
-/* line 41, ../scss/modules/_home.scss */
+/* line 40, ../scss/modules/_home.scss */
 .bannercontainer {
   width: 100%;
   position: relative;
   padding: 0;
 }
-/* line 46, ../scss/modules/_home.scss */
+/* line 45, ../scss/modules/_home.scss */
 .bannercontainer .banner {
   width: 100%;
   position: relative;
 }
-/* line 50, ../scss/modules/_home.scss */
+/* line 49, ../scss/modules/_home.scss */
 .bannercontainer .banner ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 55, ../scss/modules/_home.scss */
+/* line 54, ../scss/modules/_home.scss */
 .bannercontainer .banner ul li {
   position: relative;
+  width: 103% !important;
 }
 /* line 57, ../scss/modules/_home.scss */
 .bannercontainer .banner ul li img {
-  width: 100%;
-  -webkit-background-size: cover;
+  width: 100% !important;
+  height: 100% !important;
 }
 /* line 64, ../scss/modules/_home.scss */
 .bannercontainer .banner img.laptop {
   position: absolute;
   bottom: 0;
-  width: 100% !important;
+  width: 100%;
   z-index: 2;
 }
 /* line 71, ../scss/modules/_home.scss */
@@ -775,7 +776,7 @@ nav.header .navigation li a {
 .bannercontainer .banner .content .text {
   position: relative;
   float: right;
-  margin-right: 40px;
+  margin-right: 50px;
   z-index: 4;
 }
 /* line 83, ../scss/modules/_home.scss */

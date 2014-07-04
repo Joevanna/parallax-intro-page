@@ -22,8 +22,8 @@
             drag_block_vertical: false,
                                     
             parallax:"mouse",
-            parallaxBgFreeze:"off",
-            parallaxLevels:[7,4,3,2,5,4,3,2,1,0],
+            parallaxBgFreeze:"on",
+            parallaxLevels:[1,0],
                                     
             keyboardNavigation:"off",
             
